@@ -2,17 +2,14 @@ package simulador.pokemon;
 
 public abstract class Pokemon {
     public String nombre;
-    private String tipo;
-    private int salud;
-    private int ataque;
-    private int defensa;
+    public int salud;
+    public final int ataque;
+    private final int defensa = 0;
 
-    public Pokemon(String nombre,String tipo,int salud, int ataque, int defensa){
+    public Pokemon(String nombre, int salud, int ataque, String tipo){
         this.nombre = nombre;
-        this.tipo = tipo;
         this.salud = salud;
         this.ataque = ataque;
-        this.defensa = defensa;
     }
 
     public void atacar(Pokemon objetivo){
@@ -33,6 +30,10 @@ public abstract class Pokemon {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public void mostrarInfo() {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
 
