@@ -12,7 +12,6 @@ public class PokemonBuilder implements Serializable {
             case "charmander" -> new Charmander();
             case "squirtle" -> new Squirtle();
             case "bulbasaur" -> new Bulbasaur();
-            case "pikachu" -> new Pikachu();
             case "abra" -> new Abra();
             case "geodude" -> new Geodude();
             case "pidgey" -> new Pidgey();
@@ -28,7 +27,6 @@ public class PokemonBuilder implements Serializable {
             case "charmander" -> new Charmander(nombre, puntosVida, puntosAtaque, estado);
             case "squirtle" -> new Squirtle(nombre, puntosVida, puntosAtaque, estado);
             case "bulbasaur" -> new Bulbasaur(nombre, puntosVida, puntosAtaque, estado);
-            case "pikachu" -> new Pikachu(nombre, puntosVida, puntosAtaque, estado);
             case "abra" -> new Abra(nombre, puntosVida, puntosAtaque, estado);
             case "geodude" -> new Geodude(nombre, puntosVida, puntosAtaque, estado);
             case "pidgey" -> new Pidgey(nombre, puntosVida, puntosAtaque, estado);
@@ -39,8 +37,5 @@ public class PokemonBuilder implements Serializable {
         };
     }
 
-    public Object crearPokemon(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
 }
